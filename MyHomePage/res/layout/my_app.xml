@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/app_size"
+    android:layout_height="@dimen/app_size"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="@dimen/appicon_size"
+        android:layout_height="@dimen/appicon_size"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="未命名"
+        android:textColor="@color/appname_color"
+        android:textSize="@dimen/appname_size" />
+
+</LinearLayout>

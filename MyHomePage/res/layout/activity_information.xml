@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="1000dip"
+        android:layout_height="600dip"
+        android:background="@drawable/set_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/line" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="70dip" >
+
+            <LinearLayout
+                android:layout_width="650dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_marginLeft="60dip"
+                    android:background="@drawable/chibang" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dip" >
+
+                    <TextView
+                        android:id="@+id/app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="28sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/version"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/app_version_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/total_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="70dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_total"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/app_total_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/app_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_size"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/app_size_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/data_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_data"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/app_data_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cache_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cache_date"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/app_cache_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CCCCCCCC"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dip"
+                android:background="@drawable/vertical_line" />
+
+            <LinearLayout
+                android:layout_width="350dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/force_stop_btn"
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:text="@string/force_stop"
+                    android:textColor="#CCCCCCCC"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/uninstall_btn"
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:paddingTop="5dip"
+                    android:text="@string/uninstall_app"
+                    android:textColor="#CCCCCCCC"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/clear_data_btn"
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:paddingTop="5dip"
+                    android:text="@string/clear_data"
+                    android:textColor="#CCCCCCCC"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/move_app_btn"
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:paddingTop="5dip"
+                    android:textColor="#CCCCCCCC"
+                    android:textSize="24sp" />
+
+                <!-- Ban notifications for this package -->
+
+                <RelativeLayout
+                    android:id="@+id/notification_switch_layout"
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dip" >
+
+                    <CheckBox
+                        android:id="@+id/notification_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/app_notifications_switch_label"
+                        android:textColor="#CCCCCCCC"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/uninstall_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dip"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="960dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dip" >
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="480dp"
+                android:layout_height="25dip"
+                android:layout_marginLeft="33.3dip"
+                android:background="@drawable/pro_frame_bg"
+                android:max="100"
+                android:progressDrawable="@drawable/custom_progress_bar"
+                android:visibility="invisible" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dip"
+                android:layout_marginTop="60dip"
+                android:background="@drawable/line" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

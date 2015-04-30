@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#787878"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="显示设置"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp" >
+
+        <CheckBox
+            android:id="@+id/weathercheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示天气预报" />
+
+        <CheckBox
+            android:id="@+id/timecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示时间，并网络校正" />
+
+        <CheckBox
+            android:id="@+id/remotecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机遥控接收" />
+
+        <Button
+            android:id="@+id/appmanager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用显示管理" />
+    </LinearLayout>
+
+</LinearLayout>

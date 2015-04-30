@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyHome</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="app_manager">应用管理</string>
+    <string name="version">版本</string>
+    <string name="app_total">总计</string>
+    <string name="app_size">应用</string>
+    <string name="app_data">数据</string>
+    <string name="cache_date">缓存</string>
+    <string name="force_stop">强制停止</string>
+    <string name="uninstall_app">卸载</string>
+    <string name="clear_data">清理数据</string>
+    <string name="app_notifications_switch_label">显示通知</string>
+
+</resources>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#787878"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" >
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00ffff"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#ff00ff"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="40dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="#ff00ff"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/datatime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/date_color"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/homepage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="6"
+        android:orientation="horizontal"
+        android:scrollbars="none" >
+    </GridView>
+
+    <com.sunyj.help.MyFocusView
+        android:id="@+id/myfocusview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.sunyj.help.MyFocusView>
+
+</RelativeLayout>
